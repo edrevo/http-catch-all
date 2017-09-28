@@ -1,0 +1,27 @@
+{
+  "name": "http-catch-all",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./bin/http-catch-all.js",
+  "scripts": {
+    "start": "node ./bin/http-catch-all.js",
+    "dev": "DEBUG=http-catch-all:* nodemon ./bin/http-catch-all.js"
+  },
+  "bin": {
+    "http-catch-all": "./bin/http-catch-all.js"
+  },
+  "preferGlobal": true,
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "colors": "^1.1.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "minimist": "^1.2.0",
+    "morgan": "~1.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
