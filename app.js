@@ -21,7 +21,7 @@ app.use(function (req, res, next) {
   const current = Date.now().valueOf();
   const code = req.params.code;
   const sent = Number(req.body.event.payload.sent) * 1000;
-  console.log(current - sent);
+  console.log(current + " " + (current - sent));
   res.status(200).send();
 });
 
